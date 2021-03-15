@@ -1,13 +1,15 @@
 name: CI_resume
 
-on:
-  push
+on: [push]
       
 jobs:
   build_docker:
     runs-on: ubuntu-latest
     steps:
     - name: First build
-      run: sudo docker build -t docker_s -f Dockerfile .
+    - uses: actions/checkout@v1
+    - uses: ./
+    - name: Build docker
+      run: docker build -t docker_s -f Dockerfile .
     - name: Build pdf
-      run: sudo docker run -it docker_s /bin/bash
+      run: docker run -it docker_s /bin/bash
