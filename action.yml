@@ -1,0 +1,9 @@
+name: 'Space lover'
+author: 'Michael Evdokimov'
+description: 'That is my resume and first steps in dockers'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'award'
+  color: 'red'
