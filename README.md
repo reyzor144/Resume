@@ -1,4 +1,4 @@
-# Resume
-Evdokimov Michael / 198
+# Evdokimov Michael / 198
+## Resume
 
-Люблю клубнику, но бананы тоже норм
+## Люблю клубнику, не люблю акос.
