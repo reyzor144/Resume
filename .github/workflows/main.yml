@@ -6,7 +6,7 @@ jobs:
   build_docker:
     runs-on: ubuntu-latest
     steps:
-    - name: Build docker
+    - name: Build docker 
       run: docker build -t docker_s -f Dockerfile .
     - name: Build pdf
       run: docker run -it docker_s /bin/bash
