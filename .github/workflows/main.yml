@@ -1,0 +1,13 @@
+name: CI_resume
+
+on:
+  push
+      
+jobs:
+  build_docker:
+    runs-on: ubuntu-latest
+    steps:
+    - name: First build
+      run: sudo docker build -t docker_s -f Dockerfile .
+    - name: Build pdf
+      run: sudo docker run -it docker_s /bin/bash
