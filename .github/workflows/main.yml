@@ -6,9 +6,6 @@ jobs:
   build_docker:
     runs-on: ubuntu-latest
     steps:
-    - name: First
-    - uses: actions/checkout@v1
-    - uses: ./
     - name: Build docker 
       run: docker build -t docker_s -f Dockerfile .
     - name: Build pdf
