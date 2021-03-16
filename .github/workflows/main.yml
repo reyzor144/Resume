@@ -11,4 +11,4 @@ jobs:
     - name: Build docker 
       run: docker build -t docker_s -f Dockerfile .
     - name: Build pdf
-      run: docker run -it docker_s /bin/bash
+      run: docker run -i docker_s /bin/bash
